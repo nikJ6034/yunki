@@ -1,10 +1,10 @@
 <template>
   <div>
     <VueSlickCarousel :arrows="true" :dots="true">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
+      <div><img src="@/static/images/download.jpg"></div>
+      <div><img src="@/static/images/download.jpg"></div>
+      <div><img src="@/static/images/download.jpg"></div>
+      <div><img src="@/static/images/download.jpg"></div>
     </VueSlickCarousel>
   </div>
 </template>

@@ -50,7 +50,11 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    //publicPath: 'test_pro/_nuxt/',
     extend (config, ctx) {
     }
+  },
+  router: {
+    base: '/test_pro/'
   }
 }
