@@ -138,7 +138,7 @@
       </div>
       <b-collapse id="collapse-1" class="mt-2" style="position:relative;right:320px; top:-50px; width:300px">
         <b-card style="border: solid 1px #1d36e8; border-radius: 10px;">
-          <div style="text-align: center; color: #7b7878; font-size: 20px; font-weight: 500; margin-bottom:10px;">김윤기를 돕고 싶다면 필독!</div>
+          <div style="text-align: center; animation-duration: 2s; animation-name: rainbow-font; animation-iteration-count: infinite; font-size: 20px; font-weight: 500; margin-bottom:10px;">김윤기를 돕고 싶다면 필독!</div>
           <p class="card-text">
             <span style="color:red; font-size: 15px; font-weight: 600;">방법 하나!</span>
             <span style="color:#7b7878; font-size: 15px; font-weight: 600;"> : 유튜브, 페이스북 좋아요를 꼭 누른다.</span>
@@ -155,7 +155,7 @@
             </div>
             <br>
             <div>
-              <span style="color:#fac11e; font-size: 14px; font-weight: 600;">국민은행 461301-04-570006<br>[유성을국회의원 예비후보 김윤기 후원회]</span>
+              <span style="color:#1e58fa; font-size: 14px; font-weight: 600;">국민은행 461301-04-570006<br>[유성을국회의원 예비후보 김윤기 후원회]</span>
             </div>
           </p>
         </b-card>
@@ -281,6 +281,18 @@ export default {
     margin-left: 10%;
   }
 }
+
+@keyframes rainbow-font {
+  0% { color: #ff2a2a; }
+  15% { color: #ff7a2a; }
+  30% { color: #ffc52a; }
+  45% { color: #43ff2a; }
+  60% { color: #2a89ff; }
+  75% { color: #202082; }
+  90% { color: #6b2aff; }
+  100% { color: #e82aff; }
+}
+
 .carousel1 {height:450px;}
 @media (max-width: 1200px) {
   #floatMenu {right:5px}

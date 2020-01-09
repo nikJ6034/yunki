@@ -4,24 +4,8 @@
       <b-row>
         <b-col cols="12">
           <b-row class="notMobile h-100 m-0">
-            <div style="display:inline-block; width: 20%;">
-              <b-img class="logo" src="~/static/images/정의당_높이조절.png" alt="Responsive image" />
-            </div>
-            <div style="display:inline-block; width: 80%;">
-              <div class="title h-100" style="display:inline-block ">
-                <!-- <div class="h-100" style="display:inline-block; font-size:15px; vertical-align: middle"></div> -->
-                <div class="title1" style="display:inline-block;">
-                  대전 유성구을 국회의원
-                </div>
-                <br>
-                <div class="title2" style="display:inline-block;">
-                  예비후보
-                </div>
-                <div class="title3" style="display:inline-block;color:#ffbf0a;">
-                  김윤기
-                </div>
-              </div>
-            </div>
+            <b-img class="logo" src="~/static/images/정의당_높이조절.png" style="margin:20px" alt="Responsive image" />
+            <b-img style="height:100px; float:right" src="~/static/images/홈페이지_200_100.png"/>
             <!-- <div style="margin-right:-20px; display:inline-block">
               <b-nav class="text-muted h-100">
                 <div class="h-100" style="display:inline-block; font-size:15px; vertical-align: middle"></div>
@@ -34,18 +18,8 @@
           <div class="mobile">
             <b-navbar toggleable="lg">
               <div style="display:inline-block;width:100%">
-                <b-img class="logo w-px-100" left src="~/static/images/정의당_높이조절.png" alt="Responsive image" />
-                <div class="title">
-                  <div style="display:inline-block; font-size:12px; float:right;">
-                    대전 유성구을 국회의원
-                  </div><br>
-                  <div style="display:inline-block; font-size:25px; float:right;color:#ffbf0a;">
-                    김윤기
-                  </div>
-                  <div class="mr-2" style="display:inline-block; font-size:10px; float:right;">
-                    예비후보
-                  </div>
-                </div>
+                <b-img class="logo" src="~/static/images/정의당_높이조절.png" alt="Responsive image" />
+                <b-img class="kimyunki" style="float:right" src="~/static/images/홈페이지_200_100.png"/>
               </div>
               <!-- <b-navbar-brand href="#">홈</b-navbar-brand> -->
               <!-- <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -68,18 +42,16 @@
 .logo {display:inline-block;}
 .h-px-100 {height:100px;}
 .w-px-100 {width:100px;}
-
+.notMobile {display:inline}
 @media (max-width: 960px) {
   .notMobile {display:none}
   div.title {font-weight: bold; text-align: end;}
+  .kimyunki {height: 60px;}
+  .logo {height: 60px;}
 }
 /*피씨 버전*/
 @media (min-width: 960px) {
   .mobile {display:none}
-  div.title {padding:10px;text-align: end; width:100%;}
-  div.title .title1 {font-size: 20px; font-weight: bold;}
-  div.title .title3 {font-size: 30px; font-weight: bold;}
-  div.title .title2 {font-size: 15px}
   ul {display:inline-block;}
   ul li {display:inline-block;}
 }
