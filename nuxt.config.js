@@ -1,4 +1,5 @@
 
+
 export default {
   mode: 'universal',
   /*
@@ -7,10 +8,14 @@ export default {
   head: {
     //title: process.env.npm_package_name || '',
     title: "대전 유성구을 국회의원 예비후보 김윤기",
+    script: [{ src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' }],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description'
+        // , content: process.env.npm_package_description || ''
+        , content: '대전 유성구을 국회의원 예비후보 김윤기 입니다.'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -53,9 +58,22 @@ export default {
     */
     //publicPath: 'test_pro/_nuxt/',
     extend (config, ctx) {
-    }
+    },
+    vendor: ['external_library']
   },
   router: {
     base: '/'
+  }
+}
+
+const webpack = require('webpack')
+module.exports = {
+  build: {
+      vendor: ['jquery'],
+      plugins: [
+        new webpack.ProvidePlugin({
+          '$': 'jquery'
+        })
+      ]
   }
 }

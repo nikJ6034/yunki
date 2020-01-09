@@ -5,14 +5,21 @@
         <b-col cols="12">
           <b-row class="notMobile h-100 m-0">
             <div style="display:inline-block; width: 20%;">
-              <b-img class="logo" src="~/static/images/정의당_높이조절.png" alt="Responsive image"></b-img>
+              <b-img class="logo" src="~/static/images/정의당_높이조절.png" alt="Responsive image" />
             </div>
             <div style="display:inline-block; width: 80%;">
               <div class="title h-100" style="display:inline-block ">
                 <!-- <div class="h-100" style="display:inline-block; font-size:15px; vertical-align: middle"></div> -->
-                <div class="title1" style="display:inline-block;">대전 유성구을 국회의원</div><br/>
-                <div class="title2" style="display:inline-block;">예비후보</div>
-                <div class="title3" style="display:inline-block;">김윤기</div>
+                <div class="title1" style="display:inline-block;">
+                  대전 유성구을 국회의원
+                </div>
+                <br>
+                <div class="title2" style="display:inline-block;">
+                  예비후보
+                </div>
+                <div class="title3" style="display:inline-block;color:#ffbf0a;">
+                  김윤기
+                </div>
               </div>
             </div>
             <!-- <div style="margin-right:-20px; display:inline-block">
@@ -26,11 +33,18 @@
           </b-row>
           <div class="mobile">
             <b-navbar toggleable="lg">
-              <div style="display:inline-block; width:100%">
-                <b-img class="logo w-px-100" left src="~/static/images/정의당_높이조절.png" alt="Responsive image"></b-img>
-                <div class="title w-px-200" style="">
-                  <div style="display:inline-block; font-size:12px;">대전 유성구을 국회의원</div><br/>
-                  <div class="mr-2" style="display:inline-block; font-size:10px;">예비후보</div><div style="display:inline-block; font-size:25px;">김윤기</div>
+              <div style="display:inline-block;width:100%">
+                <b-img class="logo w-px-100" left src="~/static/images/정의당_높이조절.png" alt="Responsive image" />
+                <div class="title">
+                  <div style="display:inline-block; font-size:12px; float:right;">
+                    대전 유성구을 국회의원
+                  </div><br>
+                  <div style="display:inline-block; font-size:25px; float:right;color:#ffbf0a;">
+                    김윤기
+                  </div>
+                  <div class="mr-2" style="display:inline-block; font-size:10px; float:right;">
+                    예비후보
+                  </div>
                 </div>
               </div>
               <!-- <b-navbar-brand href="#">홈</b-navbar-brand> -->
